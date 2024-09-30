@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Systeme-Spiel</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Import the Fira Sans font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Page -->
+    <div id="start-page">
+        <h1>Hallo!</h1>
+        <p>
+            Sie sind KI-Berater und kennen viele verschiedene KI-Systeme, die Menschen bei unterschiedlichen Aufgaben unterstützen können. 
+            Könnten Sie den folgenden Personen Unterstützung bieten, indem Sie ihnen KI-Systeme empfehlen, die auf ihre Probleme zugeschnitten sind?
+        </p>
+        <button id="start-button">Starten</button>
+    </div>
+
+    <!-- Game Container (Initially Hidden) -->
+    <div id="game-container" style="display: none;">
+        <!-- Persona card area -->
+        <div id="persona-card"></div>
+
+        <!-- Solution cards area -->
+        <div id="solution-cards">
+            <!-- Cards will be dynamically added here -->
+        </div>
+
+        <!-- Score area -->
+        <div id="score-container">
+            <div class="score-background">
+                <span class="score-label">Punktzahl:</span>
+                <span class="score-value" id="score-value">0</span>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Modal structure -->
+    <div id="try-again-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p>Es gibt ein anderes KI-System, das geeignet ist ... versuchen Sie es noch einmal!</p>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer id="game-footer">
+        <p>
+            Dieses Spiel basiert auf dem <a href="https://www.hiig.de/wp-content/uploads/2024/04/AI-Compass-Print-Your-Own-Game-Materials-on-A4-Paper_Version-240 322.pdf„ target=“_blank">AI COMPASS-Spiel wurde vom Alexander von Humboldt Institut für Internet und Gesellschaft gGmbH und der gemeinnützigen Organisation neuland & gestalten gGmbH veröffentlicht und vom Büro für Sinn und Unsinn GbR</a> entworfen und entwickelt.<br>
+            Die Persona-Fotos wurden mit der KI-App DALL-E erstellt. Die Systembilder wurden von den jeweiligen Websites abgerufen.<br>
+            Lizenz: Creative Commons BY-NC-SA 4.0   
+        </p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

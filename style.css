@@ -1,0 +1,474 @@
+/* General page styles */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-image: url('background.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: auto; /* Enable vertical scroll */
+}
+
+/* Main content wrapper */
+#game-container {
+    width: 100%;
+    max-width: 1300px; /* Adjust to accommodate 5 solution cards */
+    background-color: rgba(255, 255, 255, 0); /* Slight white transparency background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for better visual separation */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; /* Add space at the bottom */
+}
+
+
+/* Start page */
+#start-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    margin-top: 100px;
+}
+
+#start-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#start-page p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+#start-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(15, 91, 51); /* New color from the provided image */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    background-color: rgba(15, 91, 51, 0.8); /* Darker shade on hover */
+}
+
+/* Persona card section */
+#persona-card {
+    width: 100%; 
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; /* Space between persona card and solution cards */
+}
+
+/* Persona card container with white background */
+#persona-card .persona-container {
+    width: 100%;
+    max-width: 549px;
+    background-color: white;
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Persona card image */
+#persona-card .image-container {
+    width: 256px;
+    height: auto;
+    margin-right: 20px; /* Space between the image and the text */
+}
+
+#persona-card .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional, for rounded image corners */
+}
+
+/* Persona card text */
+#persona-card .text {
+    flex: 1;
+    color: black;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+/* Layout for solution cards */
+#solution-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Evenly space the cards */
+    gap: 20px; /* Add space between the cards */
+    width: 100%; /* Ensure it takes the full width */
+    max-width: 1300px; /* Adjust the max width to fit 5 cards */
+    margin: 0 auto; /* Center the solution cards container */
+}
+
+/* Card container */
+.card-container {
+    width: calc(20% - 20px); /* Responsive width for 5 cards with gap */
+    height: auto; /* Let the height adjust based on content */
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Ensure the image and text stack vertically */
+    align-items: center; /* Center the content horizontally */
+    padding: 10px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Card shadow */
+    cursor: pointer; /* Change cursor to hand when hovering */
+}
+
+.card-container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Optional hover effect */
+}
+
+/* Card image */
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Space between image and description */
+}
+
+/* Card description section */
+.card-description {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+    word-wrap: break-word;
+    text-align: left; /* Make the text justified */
+    margin-bottom: 10px; /* Space below the description */
+}
+
+.card-description span {
+    font-weight: 300;
+}
+
+/* Card link section */
+.card-link {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+    text-align: center; /* Center the link text */
+}
+
+.card-link a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.card-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1200px) {
+    .card-container {
+        width: calc(25% - 20px); /* Adjust width for 4 cards on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        width: calc(50% - 20px); /* Adjust width for 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        width: calc(100% - 20px); /* Full width for one card per row */
+    }
+}
+
+/* Score container styles */
+#score-container {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    height: auto; /* Make responsive */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included */
+}
+
+/* Background for score container */
+.score-background {
+    width: 100%;
+    max-width: 90%; /* Adjust for responsiveness */
+    height: auto;
+    padding: 20px;
+    background: rgba(8, 76, 2, 0.75);
+    border-radius: 20px;
+    box-sizing: border-box; /* Include padding in the width/height */
+    text-align: center;
+}
+
+/* Label inside the score container */
+.score-label {
+    display: inline-block;
+    color: white;
+    font-size: 2vw; /* Scale font size based on viewport width */
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+
+/* Score value styling */
+.score-value {
+    display: inline-block;
+    color: white;
+    font-size: 2vw; /* Scale font size based on viewport width */
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Close button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1200px) {
+    #solution-cards {
+        max-width: 1000px;
+    }
+
+    .card-container {
+        width: calc(25% - 20px); /* Adjust width for 4 cards on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #solution-cards {
+        max-width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .card-container {
+        width: calc(50% - 20px); /* Adjust width for 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        width: calc(100% - 20px); /* Full width for one card per row */
+    }
+
+    .score-label, .score-value {
+        font-size: 8vw; /* Adjust font size for smaller screens */
+    }
+
+    #score-container {
+        padding: 15px;
+    }
+
+    .score-background {
+        padding: 15px;
+    }
+}
+
+
+/* End game container styles */
+.end-game-container {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgba(255, 255, 255, 0.8); /* White with high transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    margin-bottom: 20px;
+}
+
+
+/* Slide card container to center */
+#slide-deck-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 20px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Light shadow */
+    width: 340px; /* Adjusted to fit the nav arrows inside */
+    height: 100vh; /* Ensure it takes the full viewport height */
+}
+
+/* Slide card styles */
+.slide-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Solid white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Light shadow */
+    width: 100%; /* Ensure it takes up full container width */
+    max-width: 300px; /* Limit width */
+    text-align: center;
+}
+
+.slide-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.slide-description {
+    text-align: justify;
+    padding: 10px;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+    #slide-deck-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .slide-card {
+        max-width: 500px; /* Larger max width for bigger screens */
+    }
+}
+
+/* Slide navigation arrows */
+.slide-nav {
+    font-size: 36px; /* Increased size */
+    cursor: pointer;
+    padding: 10px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border-radius: 50%; /* Circular button */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+#prev-slide {
+    left: 10px; /* Position on the left */
+}
+
+#next-slide {
+    right: 10px; /* Position on the right */
+}
+
+.slide-nav:hover {
+    color: #1E90FF; /* Hover color */
+}
+
+/* Footer styles */
+#game-footer {
+    width: 100%;
+    text-align: center;
+    background-color: transparent; /* Make it transparent or match the background */
+    padding: 10px 0;
+    position: relative; /* Ensure it stays at the bottom, but not fixed */
+    left: 0;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+#game-footer p {
+    font-size: 12px; /* Small font size */
+    color: white; /* White text */
+    margin: 0;
+    padding: 0 10px;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.5;
+    opacity: 0.8; /* Slight transparency for the text */
+}
+
+/* Link styles for the footer */
+#game-footer a {
+    color: white; /* White link */
+    opacity: 0.8; /* Make link slightly transparent to match other text */
+}
+
+#game-footer a:hover {
+    text-decoration: underline; /* Underline on hover for visibility */
+    opacity: 1; /* Full opacity when hovered */
+}
