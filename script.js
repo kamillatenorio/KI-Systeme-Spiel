@@ -46,7 +46,7 @@ const gameData = [
     {
         persona: {
             image: 'persona-card2.svg', // Different persona image
-            text: 'Die Verschmutzung der Ozeane ist wirklich ein riesiges Problem. Haben Sie Ideen, wie wir effektiver'
+            text: 'Die Verschmutzung der Ozeane ist wirklich ein riesiges Problem. Haben Sie Ideen, wie wir effektiver und schneller handeln können?'
         },
         solutions: [
             { 
