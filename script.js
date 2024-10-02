@@ -140,7 +140,7 @@ const gameData = [
                 description: 'werden Vorschläge für Bücher gemacht, die einem Benutzer gefallen könnten, basierend auf seinen Lieblingsbüchern.', 
                 link: 'https://readow.ai/', 
                 image: 'card16.svg', // Use the local image path
-                correct: false 
+                correct: true 
             },
             { 
                 name: 'Seeing AI', 
@@ -154,7 +154,7 @@ const gameData = [
                 description: 'simuliert menschliche Gespräche im Dialogformat und gibt Antworten auf die Fragen der Benutzer.', 
                 link: 'https://character.ai/', 
                 image: 'card17.svg', // Use the local image path
-                correct: true 
+                correct: false 
             },
             { 
                 name: 'PoliTrack', 
