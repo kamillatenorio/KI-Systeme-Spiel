@@ -132,7 +132,7 @@ const gameData = [
     {
         persona: {
             image: 'persona-card4.svg', // Persona image
-            text: 'Ich bin in letzter Zeit gestresst, vor allem wegen meines vollen Terminkalenders. Ich würde gerne Bücher finden, die mich aufbauen. Hast du Vorschläge?'
+            text: 'Ich bin in letzter Zeit gestresst, vor allem wegen meines vollen Terminkalenders. Ich würde gerne Bücher finden, die ich gerne mag. Hast du Vorschläge?'
         },
         solutions: [
             { 
