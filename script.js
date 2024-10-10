@@ -108,14 +108,14 @@ const gameData = [
             },
             { 
                 name: 'Stockfish', 
-                description: 'handelt sich um einen leistungsstarken Schach-KI-Algorithmus, der das Spiel auf Weltmeisterniveau spielt.', 
+                description: 'ist ein leistungsstarker Schach-KI-Algorithmus, der das Spiel auf Weltmeisterniveau spielt.', 
                 link: 'https://stockfishchess.org/', 
                 image: 'card14.svg', // Use the local image path
                 correct: false 
             },
             { 
                 name: 'Seeing AI', 
-                description: 'unterstützt sehbehinderte Menschen, indem es beispielsweise Texte vorliest, Personen erkennt und beschreibt und Produkte erkennt.', 
+                description: 'unterstützt sehbehinderte Menschen, indem es beispielsweise Texte vorliest, Personen und Produkte erkennt und beschreibt.', 
                 link: 'https://www.seeingai.com/', 
                 image: 'card15.svg', // Use the local image path
                 correct: true 
@@ -137,7 +137,7 @@ const gameData = [
         solutions: [
             { 
                 name: 'Readow', 
-                description: 'werden Vorschläge für Bücher gemacht, die einem Benutzer gefallen könnten, basierend auf seinen Lieblingsbüchern.', 
+                description: 'gibt Vorschläge für Bücher, die einem Benutzer gefallen könnten, basierend auf seinen Lieblingsbüchern.', 
                 link: 'https://readow.ai/', 
                 image: 'card16.svg', // Use the local image path
                 correct: true 
@@ -180,7 +180,7 @@ const gameData = [
         solutions: [
             { 
                 name: 'KI4LSA', 
-                description: 'handelt sich um ein Projekt, das darauf abzielt, den Verkehrsfluss und die Sicherheit von Fußgängern zu optimieren, indem die Verkehrssituation mithilfe von Sensoren analysiert und die Ampelschaltung entsprechend angepasst wird.', 
+                description: 'ist ein Projekt, das darauf abzielt, den Verkehrsfluss und die Sicherheit von Fußgängern zu optimieren, indem die Verkehrssituation mithilfe von Sensoren analysiert und die Ampelschaltung entsprechend angepasst wird.', 
                 link: 'https://www.iosb-ina.fraunhofer.de/en/divisions/Machine-Learning/Research-topics-and-projects/Project-KI4LSA-Artificial-intelligence-for-light-signal-systems.html', 
                 image: 'card19.svg', // Use the local image path
                 correct: false 
@@ -201,14 +201,14 @@ const gameData = [
             },
             { 
                 name: 'Rainforrest Connection', 
-                description: 'handelt sich um eine Technologie, die es Menschen ermöglicht, die biologische Vielfalt und die Gesundheit des Regenwaldes zu überwachen und zu schützen.', 
+                description: 'ist eine Technologie, die es Menschen ermöglicht, die biologische Vielfalt und die Gesundheit des Regenwaldes zu überwachen und zu schützen.', 
                 link: 'https://rfcx.org/', 
                 image: 'card21.svg', // Use the local image path
                 correct: false 
             },
             { 
                 name: 'apic.ai', 
-                description: 'analysiert das Verhalten von Bienen und Hummeln, um den Einfluss von Umweltfaktoren, landwirtschaftlichen Praktiken und Substanzen auf ihre Gesundheit', 
+                description: 'analysiert das Verhalten von Bienen und Hummeln, um den Einfluss von Umweltfaktoren, landwirtschaftlichen Praktiken und Substanzen auf ihre Gesundheit zu erkennen.', 
                 link: 'https://apic.ai/', 
                 image: 'card22.svg', 
                 correct: false 
@@ -309,7 +309,7 @@ const gameData = [
         solutions: [
             { 
                 name: 'Claude', 
-                description: 'ist ein Chatbot, der bei verschiedenen Aufgaben helfen kann, z. B. beim Brainstorming von Ideen, beim Generieren von Text und Code und beim Verständnis von Themen..', 
+                description: 'ist ein Chatbot, der bei verschiedenen Aufgaben helfen kann, z. B. beim Brainstorming von Ideen, beim Generieren von Text und Code und beim Verständnis von Themen.', 
                 link: 'https://claude.ai/', 
                 image: 'card24.svg', 
                 correct: true 
