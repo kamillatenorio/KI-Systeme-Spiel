@@ -175,7 +175,7 @@ const gameData = [
     {
         persona: {
             image: 'persona-card5.svg', // Persona image
-            text: 'Als Nicht-Muttersprachler, der in einem internationalen Unternehmen arbeitet, schreibe ich regelmäßig E-Mails und Berichte auf Englisch, was dazu führt, dass ich viel Zeit mit der Überprüfung der Grammatik verbringe. Haben Sie Vorschläge?'
+            text: 'Als Nicht-Muttersprachlerin, die in einem internationalen Unternehmen arbeitet, schreibe ich regelmäßig E-Mails und Berichte auf Englisch, was dazu führt, dass ich viel Zeit mit der Überprüfung der Grammatik verbringe. Haben Sie Vorschläge?'
         },
         solutions: [
             { 
@@ -218,7 +218,7 @@ const gameData = [
     {
         persona: {
             image: 'persona-card6.svg', // Persona image
-            text: 'Ich bin Landwirt und möchte die Bienen in meiner Region schützen und meine Felder richtig düngen. Wie finde ich die richtige Balance?'
+            text: 'Ich bin Landwirtin und möchte die Bienen in meiner Region schützen und meine Felder richtig düngen. Wie finde ich die richtige Balance?'
         },
         solutions: [
             { 
@@ -261,7 +261,7 @@ const gameData = [
     {
         persona: {
             image: 'persona-card7.svg', // Persona image
-            text: 'Die meisten unserer Lehrer sind völlig überarbeitet. Wie können wir ihnen ihre Arbeit erleichtern?'
+            text: 'Die meisten unserer Lehrkräfte sind völlig überarbeitet. Wie können wir ihnen ihre Arbeit erleichtern?'
         },
         solutions: [
             { 
@@ -280,7 +280,7 @@ const gameData = [
             },
             { 
                 name: 'Fobizz', 
-                description: 'präsentiert eine Sammlung von Tools, die Lehrer bei der Planung und Durchführung von Unterrichtsstunden unterstützen.', 
+                description: 'präsentiert eine Sammlung von Tools, die Lehrkräfte bei der Planung und Durchführung von Unterrichtsstunden unterstützen.', 
                 link: 'https://tools.fobizz.com/', 
                 image: 'card23.svg', // Use the local image path
                 correct: true 
