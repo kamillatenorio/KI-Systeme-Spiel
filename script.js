@@ -458,11 +458,14 @@ function endGame() {
     const endMessage = `
         <h1>ENDE DES SPIELS</h1>
         <h2>Ihr Endergebnis:  ${score} von 8</h2>
+        <p>Toll! Sie haben einigen Menschen geholfen, indem Sie KI-Systeme empfohlen haben, die für sie hilfreich sein könnten. Es gibt eine Vielzahl von 
+        KI-Systemen, die uns bei verschiedenen Aufgaben unterstützen können. Die Möglichkeiten sind riesig! </p> 
         <div id="slide-deck-container">
             <div id="prev-slide" class="slide-nav">&lt;</div>
             <div id="slide-deck" class="slide-deck"></div>
             <div id="next-slide" class="slide-nav">&gt;</div>
         </div>
+        <p> Um mehr über KI zu erfahren, scrollen Sie nach unten und gehen Sie zur nächsten Seite (IV. Domänenübergreifende Systeme der Künstlichen Intelligenz).</p></p>
     `;
 
     endGameContainer.innerHTML = endMessage;
