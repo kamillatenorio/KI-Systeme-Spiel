@@ -150,10 +150,10 @@ const gameData = [
                 correct: false 
             },
             { 
-                name: 'Character AI', 
-                description: 'simuliert menschliche Gespräche im Dialogformat und gibt Antworten auf die Fragen der Benutzer.', 
-                link: 'https://character.ai/', 
-                image: 'card17.svg', // Use the local image path
+                name: 'Rainforrest Connection', 
+                description: 'ist eine Technologie, die es Menschen ermöglicht, die biologische Vielfalt und die Gesundheit des Regenwaldes zu überwachen und zu schützen.', 
+                link: 'https://rfcx.org/', 
+                image: 'card21.svg', // Use the local image path
                 correct: false 
             },
             { 
